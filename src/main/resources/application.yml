@@ -1,0 +1,14 @@
+spring:
+    application:
+        name: governanca-custos
+
+server:
+    port: 8080
+    error:
+        include-message: always
+        include-binding-errors: always
+
+governanca:
+    api-key: ${API_KEY:default-key-change-me}
+    webhook-url: ${WEBHOOK_URL:https://giordanome.app.n8n.cloud/webhook-test/governanca/ingest}
+    cost-threshold: 0.01
